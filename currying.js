@@ -22,6 +22,8 @@ var add = function(a,b) {
     return a + b;
 }
 
+
 //create function that returns 10 + argument
 var addTen = add.curry(10); 
+
 console.log(addTen(20)); //30

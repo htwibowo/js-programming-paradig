@@ -1,31 +1,5 @@
-class Point {
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
-  }
-  toString() {
-    return `(${this.x}, ${this.y})`;
-  }
-}
-
-class ColorPoint extends Point {
-  constructor(x, y, color) {
-    super(x,y);
-    this.color = color;
-  }
-  static staticMethod() {
-    return this.color;
-  }
-  toString() {
-    return super.toString() + ' in this ' + this.color;
-  }
-  get varX() {
-    return 'contents of varX';
-  }
-  set varY(value) {
-    console.log("Just to get input of Y, then process the input: " + value);
-  }
-}
+var Point = require('./Point')
+var ColorPoint = require('./ColorPoint')
 
 console.log("type of Point: " + typeof Point);
 console.log("type of ColorPoint: " + typeof ColorPoint);

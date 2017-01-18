@@ -20,6 +20,7 @@ console.log("Alamat URL yang diakses oleh halSatu = " + halSatu.url);
 console.log("Alamat URL yang diakses oleh halDua = " + halDua.url);
 
 console.log("Nama domain halDua = " + halDua.getDomainName());
+console.log("Nama domain halSatu = " + halSatu.getDomainName());
 
 // hasil:
 // Mengakses alamat http://nodejs.org/api/http.html
